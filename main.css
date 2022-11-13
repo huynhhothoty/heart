@@ -1,0 +1,63 @@
+.phuonglam {
+    position: absolute;
+    left: 37%;
+    top: 32%;
+    width: 400px;
+    height: 200px;  
+    /* border: 5px solid blue; */
+    /* border-radius: 50%; */
+    /* background-color: snow;  */
+    z-index: 9999;
+    transition: all 0.5s;
+}
+.phuonglam:hover {
+    cursor: pointer;
+    animation: tonho 2s linear 0s infinite;
+}
+
+.phuonglam h1 {
+    text-align: center;
+    font-size: 60px;
+    line-height: 180px;
+    font-family: 'Rubik Bubbles', cursive;
+    font-weight: bold;
+}
+
+@keyframes updown {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        color: blueviolet;
+        /* background-color: yellow; */
+        border-color: violet;
+    }
+
+    100% {
+        transform: translateY(0);
+        color: aqua;
+        background-color: red;
+        border-color: blue;
+    }
+}
+@keyframes tonho {
+    0% {
+        
+    }
+
+    50% {
+        transform: scale(25%);
+        color: blueviolet;
+        /* background-color: yellow; */
+        border-color: violet;
+    }
+
+    100% {
+        transform: scale(100%);
+        color: gold;
+        /* background-color: red; */
+        border-color: blue;
+    }
+}
